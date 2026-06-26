@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import heroImage from '../../../assets/images/hero.png'
+import heroImage from "../../../assets/images/hero/hero-zamora.png";
 import styles from './Hero.module.css'
 
 function Hero() {

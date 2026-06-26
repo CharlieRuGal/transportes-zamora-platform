@@ -1,7 +1,13 @@
 import Hero from './components/home/Hero'
+import Navbar from './components/layout/Navbar'
 
 function App() {
-  return <Hero />
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  )
 }
 
 export default App
