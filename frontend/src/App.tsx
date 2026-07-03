@@ -1,4 +1,5 @@
 import About from './components/home/About'
+import Destinations from './components/home/Destinations'
 import Fleet from './components/home/Fleet'
 import Hero from './components/home/Hero'
 import FeaturedServices from './components/home/FeaturedServices'
@@ -14,6 +15,7 @@ function App() {
       <ImpactStats />
       <About />
       <Fleet />
+      <Destinations />
     </>
   )
 }
