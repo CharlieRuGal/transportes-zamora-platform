@@ -5,7 +5,7 @@
     linear-gradient(135deg, #0B2F50 0%, var(--color-primary) 48%, #092B49 100%);
   color: var(--color-white);
   overflow: hidden;
-  padding: 6.75rem 0;
+  padding: 6rem 0;
   position: relative;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .header {
-  margin: 0 auto 4rem;
+  margin: 0 auto 3.5rem;
   max-width: 860px;
   text-align: center;
 }
@@ -81,7 +81,7 @@
   background: rgba(255, 255, 255, 0.055);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.09);
   min-height: 178px;
   overflow: hidden;
   padding: 1.75rem 1.65rem 1.85rem;
@@ -107,8 +107,8 @@
 .card:hover {
   background: rgba(255, 255, 255, 0.075);
   border-color: rgba(217, 163, 33, 0.5);
-  box-shadow: 0 24px 46px rgba(0, 0, 0, 0.16);
-  transform: translateY(-7px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.14);
+  transform: translateY(-5px);
 }
 
 .card:hover::before {
@@ -152,7 +152,7 @@
 
 @media (max-width: 620px) {
   .section {
-    padding: 4.75rem 0;
+    padding: 4.25rem 0;
   }
 
   .header {
