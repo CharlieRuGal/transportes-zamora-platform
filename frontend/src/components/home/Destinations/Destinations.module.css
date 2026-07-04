@@ -62,7 +62,7 @@
 }
 
 .imageFrame {
-  height: clamp(360px, 46vw, 620px);
+  height: clamp(300px, 38vw, 500px);
   overflow: hidden;
   position: relative;
 }
@@ -187,7 +187,7 @@
 
 .card img {
   display: block;
-  height: 120px;
+  height: 104px;
   object-fit: cover;
   width: 100%;
 }
@@ -211,11 +211,11 @@
   }
 
   .imageFrame {
-    height: clamp(320px, 58vw, 500px);
+    height: clamp(280px, 50vw, 420px);
   }
 
   .card img {
-    height: 96px;
+    height: 88px;
   }
 }
 
@@ -229,7 +229,7 @@
   }
 
   .imageFrame {
-    height: 300px;
+    height: 260px;
   }
 
   .button {
@@ -243,6 +243,6 @@
   }
 
   .card img {
-    height: 92px;
+    height: 82px;
   }
 }

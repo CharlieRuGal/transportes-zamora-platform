@@ -64,7 +64,7 @@
   border: 1px solid rgba(15, 61, 102, 0.1);
   border-radius: 28px;
   box-shadow: 0 28px 60px rgba(15, 61, 102, 0.16);
-  height: clamp(360px, 42vw, 560px);
+  height: clamp(300px, 34vw, 460px);
   overflow: hidden;
   position: relative;
 }
@@ -98,7 +98,7 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   cursor: pointer;
-  height: 88px;
+  height: 76px;
   overflow: hidden;
   padding: 0;
   transition:
@@ -213,7 +213,7 @@
   }
 
   .thumbnail {
-    height: 74px;
+    height: 66px;
   }
 }
 
@@ -231,7 +231,7 @@
   }
 
   .imageFrame {
-    height: clamp(320px, 60vw, 480px);
+    height: clamp(280px, 50vw, 400px);
   }
 }
 
@@ -247,7 +247,7 @@
   }
 
   .thumbnail {
-    height: 64px;
+    height: 58px;
   }
 
   .details {

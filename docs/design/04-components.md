@@ -8,6 +8,40 @@ Navegacion principal de la landing. Debe permitir acceso rapido a las secciones 
 
 Primera seccion de impacto. Debe presentar el eslogan, titulo principal, descripcion, ubicacion, telefono, llamadas a la accion e imagen principal.
 
+# Componente: Featured Services
+
+## Objetivo
+Presentar de forma rápida los principales tipos de transporte ofrecidos por Transportes Zamora.
+
+## Diseño
+- Fondo blanco.
+- Cuatro tarjetas.
+- Bordes redondeados.
+- Sombras suaves.
+- Iconos corporativos.
+- Animaciones con Framer Motion.
+
+---
+
+# Componente: Impact Stats
+
+## Objetivo
+Transmitir confianza y trayectoria mediante indicadores visuales.
+
+## Estadísticas
+- +10 años de experiencia.
+- +5000 viajes realizados.
+- 100% compromiso.
+- Atención 24/7 según reservación.
+
+## Diseño
+- Fondo azul marino.
+- Números grandes.
+- Texto blanco.
+- Acentos dorados.
+- Animación de conteo.
+- Entrada escalonada de cada bloque.
+
 ## Button
 
 Componente reutilizable para acciones principales y secundarias, con variantes visuales coherentes con la marca.
