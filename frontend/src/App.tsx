@@ -8,6 +8,7 @@ import Hero from './components/home/Hero'
 import FeaturedServices from './components/home/FeaturedServices'
 import ImpactStats from './components/home/ImpactStats'
 import Testimonials from './components/home/Testimonials'
+import Footer from './components/layout/Footer'
 import Navbar from './components/layout/Navbar'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Testimonials />
       <FAQ />
       <Contact />
+      <Footer />
     </>
   )
 }
