@@ -2,39 +2,38 @@
 
 ## Navbar
 
-Navegacion principal de la landing. Debe permitir acceso rapido a las secciones clave y mantener una presencia limpia y corporativa.
+Navegación principal de la landing. Debe permitir acceso rápido a las secciones clave y mantener una presencia limpia y corporativa.
 
 ## Hero
 
-Primera seccion de impacto. Debe presentar el eslogan, titulo principal, descripcion, ubicacion, telefono, llamadas a la accion e imagen principal.
+Primera sección de impacto. Debe presentar el eslogan, título principal, descripción, ubicación, teléfono, llamadas a la acción e imagen principal.
 
-# Componente: Featured Services
+## Featured Services
 
-## Objetivo
-Presentar de forma rápida los principales tipos de transporte ofrecidos por Transportes Zamora.
+Presenta de forma rápida los principales tipos de transporte ofrecidos por Transportes Zamora.
 
-## Diseño
-- Fondo blanco.
+### Diseño
+
+- Fondo blanco o claro.
 - Cuatro tarjetas.
 - Bordes redondeados.
 - Sombras suaves.
-- Iconos corporativos.
+- Íconos corporativos.
 - Animaciones con Framer Motion.
 
----
+## Impact Stats
 
-# Componente: Impact Stats
+Transmite confianza y trayectoria mediante indicadores visuales.
 
-## Objetivo
-Transmitir confianza y trayectoria mediante indicadores visuales.
+### Estadísticas
 
-## Estadísticas
 - +10 años de experiencia.
 - +5000 viajes realizados.
 - 100% compromiso.
 - Atención 24/7 según reservación.
 
-## Diseño
+### Diseño
+
 - Fondo azul marino.
 - Números grandes.
 - Texto blanco.
@@ -42,38 +41,50 @@ Transmitir confianza y trayectoria mediante indicadores visuales.
 - Animación de conteo.
 - Entrada escalonada de cada bloque.
 
-## Button
+## About
 
-Componente reutilizable para acciones principales y secundarias, con variantes visuales coherentes con la marca.
+Resume la información institucional principal de Transportes Zamora dentro de la landing. Debe comunicar seguridad, puntualidad, comodidad, confianza y profesionalismo sin extender demasiado la página.
 
-## SectionTitle
-
-Componente para titulos de seccion, subtitulos y textos introductorios breves.
-
-## Card
-
-Base reutilizable para servicios, valores, beneficios, destinos, flota y testimonios.
-
-## Services
-
-Presenta los servicios de transporte turistico, empresarial, institucional y privado.
+La historia, misión, visión y valores quedan reservados para una futura página interna "Nosotros". No deben implementarse como secciones independientes dentro de la landing principal.
 
 ## Fleet
 
 Muestra las unidades disponibles y atributos relevantes como comodidad, capacidad y seguridad.
 
+## Destinations
+
+Presenta destinos turísticos destacados de Guanacaste y Costa Rica usando imágenes, descripción y actividades principales.
+
 ## Gallery
 
-Agrupa imagenes reales de unidades, viajes, destinos y experiencias.
+Agrupa imágenes reales de unidades, viajes, destinos y experiencias.
 
 ## Testimonials
 
 Presenta opiniones de clientes para reforzar confianza.
 
+## FAQ
+
+Responde preguntas frecuentes para reducir fricción antes del contacto.
+
 ## Contact
 
-Facilita la cotizacion o comunicacion directa mediante datos de contacto y formulario.
+Facilita la cotización o comunicación directa mediante datos de contacto y formulario.
 
 ## Footer
 
-Cierra la experiencia con informacion de marca, enlaces principales y datos de contacto.
+Cierra la experiencia con información de marca, enlaces principales y datos de contacto.
+
+## Componentes Reutilizables
+
+### Button
+
+Componente reutilizable para acciones principales y secundarias, con variantes visuales coherentes con la marca.
+
+### SectionTitle
+
+Componente para títulos de sección, subtítulos y textos introductorios breves.
+
+### Card
+
+Base reutilizable para servicios, beneficios, destinos, flota y testimonios.
