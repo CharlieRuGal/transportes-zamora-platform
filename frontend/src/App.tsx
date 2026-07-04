@@ -1,4 +1,5 @@
 import About from './components/home/About'
+import Contact from './components/home/Contact'
 import Destinations from './components/home/Destinations'
 import FAQ from './components/home/FAQ'
 import Fleet from './components/home/Fleet'
@@ -22,6 +23,7 @@ function App() {
       <Gallery />
       <Testimonials />
       <FAQ />
+      <Contact />
     </>
   )
 }

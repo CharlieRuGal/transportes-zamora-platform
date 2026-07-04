@@ -1,0 +1,229 @@
+.section {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(31, 111, 178, 0.32), transparent 30%),
+    radial-gradient(circle at 90% 82%, rgba(217, 163, 33, 0.16), transparent 26%),
+    linear-gradient(135deg, #0B2F50 0%, var(--color-primary) 52%, #092B49 100%);
+  color: var(--color-white);
+  overflow: hidden;
+  padding: 6.5rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: min(1320px, calc(100vw - 32px));
+  padding: 0 clamp(var(--spacing-md), 3vw, var(--spacing-2xl));
+  width: 100%;
+}
+
+.header {
+  margin: 0 auto 3.5rem;
+  max-width: 820px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--color-accent);
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.header h2 {
+  color: var(--color-white);
+  font-size: clamp(2.15rem, 4vw, 3.55rem);
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
+}
+
+.header p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.06rem;
+  line-height: 1.78;
+}
+
+.layout {
+  align-items: start;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+}
+
+.form,
+.info {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 28px;
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.16);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.fieldGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fieldGroup {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.fieldGroup label {
+  color: rgba(255, 255, 255, 0.86);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.fieldGroup input,
+.fieldGroup select,
+.fieldGroup textarea {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font: inherit;
+  min-height: 50px;
+  padding: 0.85rem 1rem;
+  transition:
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+  width: 100%;
+}
+
+.fieldGroup textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.fieldGroup input:focus,
+.fieldGroup select:focus,
+.fieldGroup textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(217, 163, 33, 0.16);
+  outline: 0;
+}
+
+.primaryButton,
+.secondaryButton {
+  align-items: center;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 var(--spacing-xl);
+  transition:
+    box-shadow 300ms ease,
+    color 300ms ease,
+    transform 300ms ease;
+}
+
+.primaryButton {
+  background: var(--color-accent);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+  color: var(--color-primary);
+  width: fit-content;
+}
+
+.primaryButton:hover {
+  box-shadow: 0 22px 42px rgba(0, 0, 0, 0.24);
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+.success {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(217, 163, 33, 0.28);
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  font-weight: 700;
+  line-height: 1.55;
+  padding: 1rem;
+}
+
+.info {
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.infoLabel {
+  color: var(--color-accent);
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.info h3 {
+  color: var(--color-white);
+  font-size: clamp(1.75rem, 3vw, 2.45rem);
+  line-height: 1.12;
+  margin-bottom: 1.5rem;
+}
+
+.infoList {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.infoList p {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
+}
+
+.infoList span {
+  color: var(--color-white);
+  display: block;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+  color: var(--color-primary);
+}
+
+.secondaryButton:hover {
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.22);
+  color: var(--color-secondary);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 880px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .header {
+    text-align: left;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .fieldGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+}
