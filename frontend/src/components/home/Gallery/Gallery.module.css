@@ -224,29 +224,81 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 3.75rem 0;
+    padding: 3.25rem 0;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .header h2 {
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
+  }
+
+  .header p {
+    font-size: 0.96rem;
+    line-height: 1.62;
   }
 
   .grid {
+    gap: 1rem;
     grid-template-columns: 1fr;
   }
 
   .card {
     border-radius: 22px;
-    min-height: 260px;
+    box-shadow: 0 12px 24px rgba(15, 61, 102, 0.1);
+    min-height: clamp(220px, 62vw, 270px);
+  }
+
+  .card:hover {
+    box-shadow: 0 14px 28px rgba(15, 61, 102, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .card:hover img {
+    transform: scale(1.025);
   }
 
   .overlay {
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .overlay h3 {
+    font-size: clamp(1.35rem, 7vw, 1.75rem);
+  }
+
+  .overlay p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .lightbox {
+    backdrop-filter: blur(4px);
+    padding: 0.75rem;
   }
 
   .modal {
     border-radius: 22px;
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.26);
     max-height: 90vh;
   }
 
   .modal img {
-    height: 40vh;
+    height: min(38vh, 300px);
+  }
+
+  .modalContent {
+    padding: 1.15rem;
+  }
+
+  .modalContent h3 {
+    font-size: clamp(1.35rem, 7vw, 1.75rem);
+  }
+
+  .modalContent p {
+    font-size: 0.94rem;
+    line-height: 1.58;
   }
 
   .closeButton {

@@ -152,20 +152,45 @@
 
 @media (max-width: 620px) {
   .section {
-    padding: 4.25rem 0;
+    padding: 3.35rem 0;
   }
 
   .header {
-    margin-bottom: 2.75rem;
+    margin-bottom: 2rem;
     text-align: left;
   }
 
+  .header h2 {
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
+  }
+
+  .header p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
   .grid {
+    gap: 0.9rem;
     grid-template-columns: 1fr;
   }
 
   .card {
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
     min-height: auto;
-    padding: 1.55rem;
+    padding: 1.25rem;
+  }
+
+  .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .card strong {
+    font-size: clamp(2.25rem, 14vw, 3rem);
+    margin-bottom: 0.65rem;
+  }
+
+  .card span {
+    font-size: 0.95rem;
   }
 }

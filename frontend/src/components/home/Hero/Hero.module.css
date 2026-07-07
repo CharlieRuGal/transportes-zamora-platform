@@ -286,25 +286,76 @@
 }
 
 @media (max-width: 560px) {
+  .hero {
+    padding: 5rem 0 3rem;
+  }
+
   .container {
     padding: 0 var(--spacing-md);
+    gap: 2rem;
+  }
+
+  .tagline {
+    font-size: 0.78rem;
+    margin-bottom: 0.75rem;
   }
 
   .title {
-    font-size: 2.05rem;
+    font-size: clamp(1.85rem, 9vw, 2.05rem);
     line-height: 1.16;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+
+  .details {
+    font-size: 0.92rem;
+    gap: 0.7rem 1rem;
+    margin-bottom: 1.35rem;
   }
 
   .actions {
     flex-direction: column;
+    gap: 0.8rem;
   }
 
   .primaryButton,
   .secondaryButton {
+    min-height: 48px;
+    padding: 0 1.25rem;
     width: 100%;
   }
 
+  .indicators {
+    gap: 0.65rem;
+  }
+
+  .indicators span {
+    box-shadow: 0 8px 18px rgba(15, 61, 102, 0.08);
+    font-size: 0.84rem;
+    padding: 0.65rem 0.85rem;
+  }
+
   .imageColumn {
-    width: min(100%, 540px);
+    width: min(100%, 430px);
+  }
+
+  .imageFloat {
+    animation: none;
+  }
+
+  .heroImage {
+    filter: drop-shadow(0 18px 26px rgba(15, 61, 102, 0.18));
+  }
+
+  .decorativeShape,
+  .hero::before,
+  .hero::after,
+  .imageColumn::after {
+    display: none;
   }
 }

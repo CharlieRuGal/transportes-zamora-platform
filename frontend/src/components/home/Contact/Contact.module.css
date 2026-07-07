@@ -215,15 +215,68 @@
 
 @media (max-width: 620px) {
   .section {
-    padding: 3.75rem 0;
+    padding: 3.25rem 0;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .header h2 {
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
+  }
+
+  .header p {
+    font-size: 0.96rem;
+    line-height: 1.62;
+  }
+
+  .layout {
+    gap: 1rem;
+  }
+
+  .form,
+  .info {
+    border-radius: 22px;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.11);
+  }
+
+  .form {
+    gap: 0.85rem;
+    padding: 1.2rem;
   }
 
   .fieldGrid {
     grid-template-columns: 1fr;
   }
 
+  .fieldGroup input,
+  .fieldGroup select,
+  .fieldGroup textarea {
+    min-height: 48px;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .fieldGroup textarea {
+    min-height: 118px;
+  }
+
   .primaryButton,
   .secondaryButton {
+    min-height: 48px;
     width: 100%;
+  }
+
+  .info {
+    padding: 1.2rem;
+  }
+
+  .info h3 {
+    font-size: clamp(1.55rem, 7vw, 1.9rem);
+  }
+
+  .infoList {
+    gap: 0.8rem;
+    margin-bottom: 1.4rem;
   }
 }

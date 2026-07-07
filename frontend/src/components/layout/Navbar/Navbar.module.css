@@ -235,6 +235,15 @@
 }
 
 @media (max-width: 1040px) {
+  .navbar {
+    backdrop-filter: blur(14px);
+  }
+
+  .scrolled {
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 24px rgba(15, 61, 102, 0.12);
+  }
+
   .container,
   .scrolled .container {
     grid-template-columns: 1fr auto;
@@ -257,7 +266,9 @@
   }
 
   .mobileMenu {
+    backdrop-filter: blur(14px);
     flex-direction: column;
+    box-shadow: 0 14px 28px rgba(15, 61, 102, 0.12);
   }
 }
 
@@ -277,5 +288,16 @@
   .logo {
     max-height: 56px;
     max-width: 180px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    max-width: 158px;
+  }
+
+  .menuButton {
+    height: 42px;
+    width: 42px;
   }
 }

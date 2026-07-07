@@ -237,7 +237,20 @@
 
 @media (max-width: 560px) {
   .section {
-    padding: 3.75rem 0;
+    padding: 3.25rem 0;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .header h2 {
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
+  }
+
+  .header p {
+    font-size: 0.96rem;
+    line-height: 1.62;
   }
 
   .thumbnails {
@@ -251,10 +264,37 @@
   }
 
   .details {
-    padding: 1.35rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 26px rgba(15, 61, 102, 0.08);
+    padding: 1.2rem;
+  }
+
+  .details h3 {
+    font-size: clamp(1.55rem, 7vw, 1.9rem);
+  }
+
+  .details p {
+    font-size: 0.95rem;
+    line-height: 1.62;
   }
 
   .button {
+    min-height: 48px;
     width: 100%;
+  }
+
+  .imageFrame {
+    border-radius: 22px;
+    box-shadow: 0 14px 28px rgba(15, 61, 102, 0.1);
+    height: clamp(230px, 64vw, 300px);
+  }
+
+  .chips {
+    gap: 0.5rem;
+  }
+
+  .chips span {
+    font-size: 0.84rem;
+    padding: 0.5rem 0.7rem;
   }
 }

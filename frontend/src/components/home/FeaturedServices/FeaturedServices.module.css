@@ -105,20 +105,47 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 4rem 0;
+    padding: 3.35rem 0;
   }
 
   .header {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.85rem;
     text-align: left;
   }
 
+  .header h2 {
+    font-size: clamp(1.75rem, 8vw, 2.15rem);
+  }
+
+  .header p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
   .grid {
+    gap: 1rem;
     grid-template-columns: 1fr;
   }
 
   .card {
+    box-shadow: 0 8px 20px rgba(15, 61, 102, 0.08);
     min-height: auto;
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .card:hover {
+    box-shadow: 0 10px 24px rgba(15, 61, 102, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .iconWrap {
+    height: 54px;
+    margin-bottom: 1rem;
+    width: 54px;
+  }
+
+  .icon {
+    height: 30px;
+    width: 30px;
   }
 }
