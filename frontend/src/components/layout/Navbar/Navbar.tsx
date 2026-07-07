@@ -1,16 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import logo from "../../../assets/images/branding/logo-transportes-zamora.png";
+import { navigationItems } from '../../../data/navigation'
 import styles from './Navbar.module.css'
-
-const navItems = [
-  { label: 'Inicio', href: '#inicio' },
-  { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Flota', href: '#flota' },
-  { label: 'Destinos', href: '#destinos' },
-  { label: 'Contacto', href: '#contacto' },
-]
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -56,7 +48,7 @@ function Navbar() {
           transition={{ duration: 0.65, delay: 0.12, ease: 'easeOut' }}
           aria-label="Navegación principal"
         >
-          {navItems.map((item) => (
+          {navigationItems.map((item) => (
             <a key={item.href} href={item.href}>
               {item.label}
             </a>
@@ -104,7 +96,7 @@ function Navbar() {
             transition={{ duration: 0.25, ease: 'easeOut' }}
             aria-label="Navegación móvil"
           >
-            {navItems.map((item) => (
+            {navigationItems.map((item) => (
               <a key={item.href} href={item.href} onClick={closeMenu}>
                 {item.label}
               </a>

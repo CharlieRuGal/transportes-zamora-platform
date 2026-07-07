@@ -9,12 +9,16 @@ export const navigationItems: NavigationItem[] = [
     href: '#inicio',
   },
   {
-    label: 'Nosotros',
-    href: '#nosotros',
-  },
-  {
     label: 'Servicios',
     href: '#servicios',
+  },
+  {
+    label: 'Experiencia',
+    href: '#experiencia',
+  },
+  {
+    label: 'Nosotros',
+    href: '#nosotros',
   },
   {
     label: 'Flota',
@@ -23,6 +27,14 @@ export const navigationItems: NavigationItem[] = [
   {
     label: 'Destinos',
     href: '#destinos',
+  },
+  {
+    label: 'Galería',
+    href: '#galeria',
+  },
+  {
+    label: 'Preguntas',
+    href: '#preguntas',
   },
   {
     label: 'Contacto',
