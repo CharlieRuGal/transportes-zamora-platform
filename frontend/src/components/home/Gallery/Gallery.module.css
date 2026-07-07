@@ -1,0 +1,310 @@
+.section {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(31, 111, 178, 0.06), transparent 30%),
+    radial-gradient(circle at 88% 82%, rgba(217, 163, 33, 0.055), transparent 28%),
+    linear-gradient(180deg, var(--color-white) 0%, rgba(245, 247, 250, 0.76) 100%);
+  overflow: hidden;
+  padding: 6rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: min(1420px, calc(100vw - 32px));
+  padding: 0 clamp(var(--spacing-md), 3vw, var(--spacing-2xl));
+  width: 100%;
+}
+
+.header {
+  margin: 0 auto 3.25rem;
+  max-width: 820px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--color-accent);
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.header h2 {
+  color: var(--color-primary);
+  font-size: clamp(2.1rem, 4vw, 3.45rem);
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
+}
+
+.header p {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.78;
+}
+
+.grid {
+  display: grid;
+  gap: 1.35rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  border-radius: 28px;
+  box-shadow: 0 18px 38px rgba(15, 61, 102, 0.11);
+  cursor: pointer;
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+  transition:
+    box-shadow 300ms ease,
+    transform 300ms ease;
+}
+
+.card:focus-visible {
+  outline: 3px solid rgba(217, 163, 33, 0.75);
+  outline-offset: 4px;
+}
+
+.card:hover {
+  box-shadow: 0 24px 48px rgba(15, 61, 102, 0.16);
+  transform: translateY(-4px);
+}
+
+.card img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transform: scale(1);
+  transition: transform 500ms ease;
+  width: 100%;
+}
+
+.card:hover img {
+  transform: scale(1.045);
+}
+
+.overlay {
+  align-items: flex-end;
+  background: linear-gradient(180deg, rgba(15, 61, 102, 0.08) 0%, rgba(15, 61, 102, 0.78) 100%);
+  color: var(--color-white);
+  display: flex;
+  inset: 0;
+  padding: 2rem;
+  position: absolute;
+  transition: background 300ms ease;
+}
+
+.card:hover .overlay {
+  background: linear-gradient(180deg, rgba(15, 61, 102, 0.16) 0%, rgba(15, 61, 102, 0.86) 100%);
+}
+
+.overlay div {
+  opacity: 0.94;
+  transform: translateY(8px);
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease;
+}
+
+.card:hover .overlay div {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  color: var(--color-white);
+  font-size: clamp(1.45rem, 3vw, 2.25rem);
+  line-height: 1.15;
+  margin-bottom: 0.8rem;
+}
+
+.overlay p {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+.lightbox {
+  align-items: center;
+  background: rgba(7, 20, 34, 0.82);
+  backdrop-filter: blur(10px);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 2rem);
+  position: fixed;
+  z-index: 100;
+}
+
+.modal {
+  background: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 28px;
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.32);
+  max-height: min(88vh, 820px);
+  max-width: 980px;
+  overflow: hidden;
+  position: relative;
+  width: min(100%, 980px);
+}
+
+.modal img {
+  display: block;
+  height: min(56vh, 500px);
+  object-fit: cover;
+  width: 100%;
+}
+
+.modalContent {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.modalContent h3 {
+  color: var(--color-primary);
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.modalContent p {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.closeButton {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(15, 61, 102, 0.1);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  color: var(--color-primary);
+  display: inline-flex;
+  font-size: 1.8rem;
+  height: 44px;
+  justify-content: center;
+  line-height: 1;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  transition:
+    box-shadow 300ms ease,
+    color 300ms ease,
+    transform 300ms ease;
+  width: 44px;
+  z-index: 1;
+}
+
+.closeButton:hover {
+  box-shadow: 0 18px 34px rgba(15, 61, 102, 0.2);
+  color: var(--color-secondary);
+  transform: scale(1.04);
+}
+
+.closeButton:focus-visible {
+  outline: 3px solid rgba(217, 163, 33, 0.75);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .header {
+    text-align: left;
+  }
+
+  .card {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 3.25rem 0;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .header h2 {
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
+  }
+
+  .header p {
+    font-size: 0.96rem;
+    line-height: 1.62;
+  }
+
+  .grid {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    border-radius: 22px;
+    box-shadow: 0 12px 24px rgba(15, 61, 102, 0.1);
+    min-height: clamp(220px, 62vw, 270px);
+  }
+
+  .card:hover {
+    box-shadow: 0 14px 28px rgba(15, 61, 102, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .card:hover img {
+    transform: scale(1.025);
+  }
+
+  .overlay {
+    padding: 1.25rem;
+  }
+
+  .overlay h3 {
+    font-size: clamp(1.35rem, 7vw, 1.75rem);
+  }
+
+  .overlay p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .lightbox {
+    backdrop-filter: blur(4px);
+    padding: 0.75rem;
+  }
+
+  .modal {
+    border-radius: 22px;
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.26);
+    max-height: 90vh;
+  }
+
+  .modal img {
+    height: min(38vh, 300px);
+  }
+
+  .modalContent {
+    padding: 1.15rem;
+  }
+
+  .modalContent h3 {
+    font-size: clamp(1.35rem, 7vw, 1.75rem);
+  }
+
+  .modalContent p {
+    font-size: 0.94rem;
+    line-height: 1.58;
+  }
+
+  .closeButton {
+    height: 40px;
+    right: 0.75rem;
+    top: 0.75rem;
+    width: 40px;
+  }
+}
