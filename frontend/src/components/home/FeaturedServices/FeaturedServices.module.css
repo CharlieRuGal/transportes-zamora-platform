@@ -2,7 +2,8 @@
   background:
     radial-gradient(circle at 8% 12%, rgba(31, 111, 178, 0.06), transparent 28%),
     linear-gradient(180deg, var(--color-white) 0%, var(--color-surface) 100%);
-  padding: 5.75rem 0;
+  overflow-x: hidden;
+  padding: 5rem 0 5.5rem;
 }
 
 .container {
@@ -105,7 +106,8 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 3.35rem 0;
+    background: linear-gradient(180deg, var(--color-white) 0%, var(--color-surface) 100%);
+    padding: 2.85rem 0 3.25rem;
   }
 
   .header {
@@ -131,6 +133,10 @@
     box-shadow: 0 8px 20px rgba(15, 61, 102, 0.08);
     min-height: auto;
     padding: 1.25rem;
+    transition:
+      border-color 220ms ease,
+      box-shadow 220ms ease,
+      transform 220ms ease;
   }
 
   .card:hover {
@@ -147,5 +153,15 @@
   .icon {
     height: 30px;
     width: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
   }
 }

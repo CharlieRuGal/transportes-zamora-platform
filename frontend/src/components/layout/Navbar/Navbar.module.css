@@ -8,6 +8,7 @@
   right: 0;
   top: 0;
   overflow: visible;
+  transform: translateZ(0);
   transition:
     background-color 0.35s ease,
     box-shadow 0.35s ease,
@@ -236,11 +237,15 @@
 
 @media (max-width: 1040px) {
   .navbar {
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(10px);
+    transition:
+      background-color 220ms ease,
+      box-shadow 220ms ease,
+      border-color 220ms ease;
   }
 
   .scrolled {
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 10px 24px rgba(15, 61, 102, 0.12);
   }
 
@@ -266,7 +271,7 @@
   }
 
   .mobileMenu {
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(10px);
     flex-direction: column;
     box-shadow: 0 14px 28px rgba(15, 61, 102, 0.12);
   }
