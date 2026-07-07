@@ -54,7 +54,9 @@ function Hero() {
           <img
             className={styles.heroImage}
             src={heroImage}
-            alt="Unidad de Transportes Zamora"
+            alt="Microbús de Transportes Zamora para transporte turístico y privado en Guanacaste"
+            decoding="async"
+            fetchPriority="high"
           />
         </motion.div>
       </div>

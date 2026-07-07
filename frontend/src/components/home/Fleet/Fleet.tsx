@@ -45,7 +45,12 @@ function Fleet() {
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.38, ease: 'easeOut' }}
               >
-                <img src={selectedUnit.image} alt={selectedUnit.name} />
+                <img
+                  src={selectedUnit.image}
+                  alt={`${selectedUnit.name} de Transportes Zamora con capacidad ${selectedUnit.capacity}`}
+                  loading="lazy"
+                  decoding="async"
+                />
               </motion.div>
             </AnimatePresence>
 
@@ -61,7 +66,7 @@ function Fleet() {
                   aria-label={`Ver ${unit.name}`}
                   aria-pressed={selectedIndex === index}
                 >
-                  <img src={unit.image} alt="" />
+                  <img src={unit.image} alt="" loading="lazy" decoding="async" />
                 </button>
               ))}
             </div>

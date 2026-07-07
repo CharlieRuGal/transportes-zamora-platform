@@ -119,7 +119,9 @@ function About() {
             <img
               className={styles.image}
               src={aboutImage}
-              alt="Equipo y servicio de Transportes Zamora"
+              alt="Servicio profesional de Transportes Zamora para pasajeros en Guanacaste"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </motion.div>

@@ -39,7 +39,13 @@ function Footer() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <img className={styles.logo} src={logo} alt={company.name} />
+            <img
+              className={styles.logo}
+              src={logo}
+              alt="Logotipo de Transportes Zamora"
+              loading="lazy"
+              decoding="async"
+            />
             <h2>{company.name}</h2>
             <p>
               Transporte seguro, cómodo y puntual para turistas, empresas,

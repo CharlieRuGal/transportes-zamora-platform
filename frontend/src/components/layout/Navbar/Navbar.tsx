@@ -38,7 +38,12 @@ function Navbar() {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           onClick={closeMenu}
         >
-          <img className={styles.logo} src={logo} alt="Transportes Zamora" />
+          <img
+            className={styles.logo}
+            src={logo}
+            alt="Logotipo de Transportes Zamora"
+            decoding="async"
+          />
         </motion.a>
 
         <motion.nav

@@ -64,7 +64,12 @@ function Gallery() {
                 }
               }}
             >
-              <img src={item.image} alt={item.title} />
+              <img
+                src={item.image}
+                alt={`${item.title} con Transportes Zamora`}
+                loading="lazy"
+                decoding="async"
+              />
               <div className={styles.overlay}>
                 <div>
                   <h3>{item.title}</h3>
@@ -105,7 +110,12 @@ function Gallery() {
               >
                 ×
               </button>
-              <img src={selectedImage.image} alt={selectedImage.title} />
+              <img
+                src={selectedImage.image}
+                alt={`${selectedImage.title} con Transportes Zamora`}
+                loading="lazy"
+                decoding="async"
+              />
               <div className={styles.modalContent}>
                 <h3>{selectedImage.title}</h3>
                 <p>{selectedImage.description}</p>

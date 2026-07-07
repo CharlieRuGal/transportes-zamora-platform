@@ -38,7 +38,12 @@ function Destinations() {
                 aria-label={`Ver ${destination.name}`}
                 aria-pressed={selectedIndex === index}
               >
-                <img src={destination.image} alt="" />
+                <img
+                  src={destination.image}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span>{destination.name}</span>
               </button>
             ))}
@@ -56,7 +61,9 @@ function Destinations() {
               <div className={styles.imageFrame}>
                 <img
                   src={selectedDestination.image}
-                  alt={selectedDestination.name}
+                  alt={`Vista de ${selectedDestination.name}, destino turístico en Guanacaste`}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
 
