@@ -61,7 +61,7 @@ Agrupa imágenes reales de unidades, viajes, destinos y experiencias.
 
 ## Testimonials
 
-Presenta opiniones de clientes para reforzar confianza.
+No forma parte de la landing principal. El componente y sus datos pueden mantenerse en el proyecto sin renderizarse, por si se reutilizan en una página interna o una versión futura.
 
 ## FAQ
 

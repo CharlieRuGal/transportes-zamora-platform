@@ -12,10 +12,9 @@ La landing de Transportes Zamora debe organizarse en secciones claras, con una n
 6. Nuestra Flota
 7. Destinos
 8. Galería
-9. Testimonios
-10. Preguntas Frecuentes
-11. Contacto
-12. Footer
+9. Preguntas Frecuentes
+10. Contacto
+11. Footer
 
 ## Criterio de simplificación
 
@@ -24,6 +23,8 @@ La sección Sobre Nosotros resume la información institucional principal dentro
 La información de Historia, Misión, Visión y Valores queda reservada para una futura página interna llamada "Nosotros". Esa información puede mantenerse centralizada en los archivos de datos del proyecto, pero no debe desarrollarse como secciones independientes dentro de la landing principal.
 
 La sección "¿Por qué elegirnos?" no se desarrollará como bloque independiente. Sus ideas principales deben integrarse de forma breve dentro de Sobre Nosotros, Impact Stats o Contacto.
+
+La sección Testimonios no formará parte de la landing principal. Los componentes y datos existentes pueden conservarse sin uso activo para una posible reutilización futura.
 
 ## Servicios Destacados
 
