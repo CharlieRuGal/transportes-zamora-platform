@@ -7,7 +7,6 @@ import Gallery from './components/home/Gallery'
 import Hero from './components/home/Hero'
 import FeaturedServices from './components/home/FeaturedServices'
 import ImpactStats from './components/home/ImpactStats'
-import Testimonials from './components/home/Testimonials'
 import Footer from './components/layout/Footer'
 import Navbar from './components/layout/Navbar'
 
@@ -22,7 +21,6 @@ function App() {
       <Fleet />
       <Destinations />
       <Gallery />
-      <Testimonials />
       <FAQ />
       <Contact />
       <Footer />
