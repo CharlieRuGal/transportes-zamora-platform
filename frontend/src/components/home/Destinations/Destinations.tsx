@@ -26,6 +26,24 @@ function Destinations() {
         </div>
 
         <div className={styles.viewer}>
+          <div className={styles.cards} aria-label="Seleccionar destino">
+            {destinations.map((destination, index) => (
+              <button
+                className={`${styles.card} ${
+                  selectedIndex === index ? styles.activeCard : ''
+                }`}
+                key={destination.id}
+                type="button"
+                onClick={() => setSelectedIndex(index)}
+                aria-label={`Ver ${destination.name}`}
+                aria-pressed={selectedIndex === index}
+              >
+                <img src={destination.image} alt="" />
+                <span>{destination.name}</span>
+              </button>
+            ))}
+          </div>
+
           <AnimatePresence mode="wait">
             <motion.article
               className={styles.featured}
@@ -61,24 +79,6 @@ function Destinations() {
               </div>
             </motion.article>
           </AnimatePresence>
-
-          <div className={styles.cards} aria-label="Seleccionar destino">
-            {destinations.map((destination, index) => (
-              <button
-                className={`${styles.card} ${
-                  selectedIndex === index ? styles.activeCard : ''
-                }`}
-                key={destination.id}
-                type="button"
-                onClick={() => setSelectedIndex(index)}
-                aria-label={`Ver ${destination.name}`}
-                aria-pressed={selectedIndex === index}
-              >
-                <img src={destination.image} alt="" />
-                <span>{destination.name}</span>
-              </button>
-            ))}
-          </div>
         </div>
       </div>
     </motion.section>

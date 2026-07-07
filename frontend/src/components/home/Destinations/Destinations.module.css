@@ -50,7 +50,7 @@
 
 .viewer {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.35rem;
 }
 
 .featured {
@@ -58,11 +58,14 @@
   border: 1px solid rgba(15, 61, 102, 0.1);
   border-radius: 30px;
   box-shadow: 0 24px 48px rgba(15, 61, 102, 0.12);
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
   overflow: hidden;
 }
 
 .imageFrame {
-  height: clamp(300px, 38vw, 500px);
+  height: 100%;
+  min-height: clamp(340px, 36vw, 500px);
   overflow: hidden;
   position: relative;
 }
@@ -83,6 +86,8 @@
 }
 
 .info {
+  align-content: center;
+  display: grid;
   padding: clamp(1.5rem, 3vw, 2.75rem);
 }
 
@@ -158,6 +163,8 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0 auto;
+  width: 100%;
 }
 
 .card {
@@ -183,6 +190,7 @@
 
 .activeCard {
   border-color: var(--color-accent);
+  box-shadow: 0 14px 30px rgba(15, 61, 102, 0.13);
 }
 
 .card img {
@@ -211,7 +219,11 @@
   }
 
   .imageFrame {
-    height: clamp(280px, 50vw, 420px);
+    min-height: clamp(280px, 50vw, 420px);
+  }
+
+  .featured {
+    grid-template-columns: 1fr;
   }
 
   .card img {
@@ -225,7 +237,7 @@
   }
 
   .header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
   }
 
   .header h2 {
@@ -243,7 +255,7 @@
   }
 
   .imageFrame {
-    height: clamp(220px, 62vw, 280px);
+    min-height: clamp(220px, 58vw, 270px);
   }
 
   .info {
@@ -265,13 +277,34 @@
   }
 
   .cards {
-    grid-template-columns: repeat(5, 170px);
+    gap: 0.8rem;
+    grid-template-columns: repeat(5, minmax(138px, 42vw));
     overflow-x: auto;
     padding-bottom: 0.35rem;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+  }
+
+  .cards::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .cards::-webkit-scrollbar-thumb {
+    background: rgba(15, 61, 102, 0.22);
+    border-radius: var(--radius-full);
+  }
+
+  .card {
+    scroll-snap-align: start;
   }
 
   .card img {
-    height: 82px;
+    height: 76px;
+  }
+
+  .card span {
+    font-size: 0.84rem;
+    padding: 0.7rem;
   }
 
   .card:hover {
