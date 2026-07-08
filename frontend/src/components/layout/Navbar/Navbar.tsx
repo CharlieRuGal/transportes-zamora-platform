@@ -54,7 +54,7 @@ function Navbar() {
           aria-label="Navegación principal"
         >
           {navigationItems.map((item) => (
-            <a key={item.href} href={item.href}>
+            <a key={item.href} href={item.href} onClick={closeMenu}>
               {item.label}
             </a>
           ))}

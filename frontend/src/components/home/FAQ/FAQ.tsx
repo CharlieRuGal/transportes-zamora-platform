@@ -7,7 +7,7 @@ function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section className={styles.section} id="faq">
+    <section className={styles.section} id="preguntas">
       <div className={styles.container}>
         <motion.div
           className={styles.header}

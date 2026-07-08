@@ -4,7 +4,7 @@ import styles from './Hero.module.css'
 
 function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="inicio">
       <div className={styles.container}>
         <motion.div
           className={styles.content}

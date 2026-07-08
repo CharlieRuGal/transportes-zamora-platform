@@ -117,6 +117,7 @@ function ImpactStats() {
   return (
     <motion.section
       className={styles.section}
+      id="experiencia"
       ref={sectionRef}
       initial={{ opacity: 0, y: 36 }}
       whileInView={{ opacity: 1, y: 0 }}

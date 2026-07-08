@@ -22,7 +22,9 @@ function App() {
       <Destinations />
       <Gallery />
       <FAQ />
-      <Contact />
+      <div id="contacto">
+        <Contact />
+      </div>
       <Footer />
     </>
   )
