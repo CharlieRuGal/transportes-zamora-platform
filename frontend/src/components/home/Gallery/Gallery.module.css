@@ -127,13 +127,16 @@
 }
 
 .lightbox {
-  align-items: center;
+  align-items: flex-start;
   background: rgba(7, 20, 34, 0.82);
   backdrop-filter: blur(10px);
+  box-sizing: border-box;
   display: flex;
   inset: 0;
   justify-content: center;
-  padding: clamp(1rem, 3vw, 2rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: clamp(5rem, 8vw, 7rem) clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 2rem);
   position: fixed;
   z-index: 100;
 }
@@ -142,9 +145,11 @@
   background: var(--color-white);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 28px;
+  box-sizing: border-box;
   box-shadow: 0 28px 64px rgba(0, 0, 0, 0.32);
+  margin: 0 auto;
   max-height: min(88vh, 820px);
-  max-width: 980px;
+  max-width: min(980px, calc(100vw - 2rem));
   overflow: hidden;
   position: relative;
   width: min(100%, 980px);
@@ -275,13 +280,14 @@
 
   .lightbox {
     backdrop-filter: blur(4px);
-    padding: 0.75rem;
+    padding: clamp(4.25rem, 12vw, 5rem) 0.75rem 0.75rem;
   }
 
   .modal {
     border-radius: 22px;
     box-shadow: 0 20px 42px rgba(0, 0, 0, 0.26);
     max-height: 90vh;
+    max-width: min(100%, calc(100vw - 1.5rem));
   }
 
   .modal img {
